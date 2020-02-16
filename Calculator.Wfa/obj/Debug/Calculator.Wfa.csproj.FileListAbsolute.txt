@@ -1,0 +1,9 @@
+C:\Users\rodgyrbu\source\repos\Diploma.Plehanov\Calculator.Wfa\bin\Debug\Calculator.Wfa.exe.config
+C:\Users\rodgyrbu\source\repos\Diploma.Plehanov\Calculator.Wfa\bin\Debug\Calculator.Wfa.exe
+C:\Users\rodgyrbu\source\repos\Diploma.Plehanov\Calculator.Wfa\bin\Debug\Calculator.Wfa.pdb
+C:\Users\rodgyrbu\source\repos\Diploma.Plehanov\Calculator.Wfa\obj\Debug\Calculator.Wfa.csprojAssemblyReference.cache
+C:\Users\rodgyrbu\source\repos\Diploma.Plehanov\Calculator.Wfa\obj\Debug\Calculator.Wfa.CalculatorForm.resources
+C:\Users\rodgyrbu\source\repos\Diploma.Plehanov\Calculator.Wfa\obj\Debug\Calculator.Wfa.Properties.Resources.resources
+C:\Users\rodgyrbu\source\repos\Diploma.Plehanov\Calculator.Wfa\obj\Debug\Calculator.Wfa.csproj.GenerateResource.cache
+C:\Users\rodgyrbu\source\repos\Diploma.Plehanov\Calculator.Wfa\obj\Debug\Calculator.Wfa.exe
+C:\Users\rodgyrbu\source\repos\Diploma.Plehanov\Calculator.Wfa\obj\Debug\Calculator.Wfa.pdb
