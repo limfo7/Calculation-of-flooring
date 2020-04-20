@@ -40,40 +40,44 @@
             // LengthLbl
             // 
             this.LengthLbl.AutoSize = true;
-            this.LengthLbl.Location = new System.Drawing.Point(212, 48);
+            this.LengthLbl.Location = new System.Drawing.Point(283, 59);
+            this.LengthLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LengthLbl.Name = "LengthLbl";
-            this.LengthLbl.Size = new System.Drawing.Size(60, 13);
+            this.LengthLbl.Size = new System.Drawing.Size(81, 17);
             this.LengthLbl.TabIndex = 0;
             this.LengthLbl.Text = "Length (m.)";
             // 
             // WidthLbl
             // 
             this.WidthLbl.AutoSize = true;
-            this.WidthLbl.Location = new System.Drawing.Point(51, 48);
+            this.WidthLbl.Location = new System.Drawing.Point(68, 59);
+            this.WidthLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.WidthLbl.Name = "WidthLbl";
-            this.WidthLbl.Size = new System.Drawing.Size(55, 13);
+            this.WidthLbl.Size = new System.Drawing.Size(73, 17);
             this.WidthLbl.TabIndex = 1;
             this.WidthLbl.Text = "Width (m.)";
             // 
             // InputNameLbl
             // 
             this.InputNameLbl.AutoSize = true;
-            this.InputNameLbl.Location = new System.Drawing.Point(3, 10);
+            this.InputNameLbl.Location = new System.Drawing.Point(4, 12);
+            this.InputNameLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.InputNameLbl.Name = "InputNameLbl";
-            this.InputNameLbl.Size = new System.Drawing.Size(37, 13);
+            this.InputNameLbl.Size = new System.Drawing.Size(48, 17);
             this.InputNameLbl.TabIndex = 2;
             this.InputNameLbl.Text = "Type: ";
             // 
             // LengthNumeric
             // 
-            this.LengthNumeric.Location = new System.Drawing.Point(172, 25);
+            this.LengthNumeric.Location = new System.Drawing.Point(229, 31);
+            this.LengthNumeric.Margin = new System.Windows.Forms.Padding(4);
             this.LengthNumeric.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
             this.LengthNumeric.Name = "LengthNumeric";
-            this.LengthNumeric.Size = new System.Drawing.Size(100, 20);
+            this.LengthNumeric.Size = new System.Drawing.Size(133, 22);
             this.LengthNumeric.TabIndex = 5;
             this.LengthNumeric.Value = new decimal(new int[] {
             1,
@@ -83,14 +87,15 @@
             // 
             // WidthNumeric
             // 
-            this.WidthNumeric.Location = new System.Drawing.Point(6, 25);
+            this.WidthNumeric.Location = new System.Drawing.Point(8, 31);
+            this.WidthNumeric.Margin = new System.Windows.Forms.Padding(4);
             this.WidthNumeric.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
             this.WidthNumeric.Name = "WidthNumeric";
-            this.WidthNumeric.Size = new System.Drawing.Size(100, 20);
+            this.WidthNumeric.Size = new System.Drawing.Size(133, 22);
             this.WidthNumeric.TabIndex = 6;
             this.WidthNumeric.Value = new decimal(new int[] {
             1,
@@ -100,15 +105,16 @@
             // 
             // InputPanel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.WidthNumeric);
             this.Controls.Add(this.LengthNumeric);
             this.Controls.Add(this.InputNameLbl);
             this.Controls.Add(this.WidthLbl);
             this.Controls.Add(this.LengthLbl);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "InputPanel";
-            this.Size = new System.Drawing.Size(275, 70);
+            this.Size = new System.Drawing.Size(367, 86);
             ((System.ComponentModel.ISupportInitialize)(this.LengthNumeric)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.WidthNumeric)).EndInit();
             this.ResumeLayout(false);

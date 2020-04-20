@@ -195,7 +195,7 @@ namespace Calculator.Wfa
 
         private void CatalogBtn_Click(object sender, EventArgs e)
         {
-            DbInitializer.Seed(_appContext);
+            //DbInitializer.Seed(_appContext);
         }
     }
 }
