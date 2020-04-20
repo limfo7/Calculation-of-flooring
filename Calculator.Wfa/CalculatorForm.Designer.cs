@@ -29,177 +29,340 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CalculatorForm));
-            this.CoverageTypeLbl = new System.Windows.Forms.Label();
-            this.CoverageLength = new System.Windows.Forms.Label();
-            this.CoverageWidthLbl = new System.Windows.Forms.Label();
             this.FloorLengthLbl = new System.Windows.Forms.Label();
             this.FloorWidthLbl = new System.Windows.Forms.Label();
-            this.MinExpenseLbl = new System.Windows.Forms.Label();
             this.FloorWidthTextBox = new System.Windows.Forms.TextBox();
-            this.CovLengthTxtBox = new System.Windows.Forms.TextBox();
-            this.CovWidthTextBox = new System.Windows.Forms.TextBox();
             this.FloorLengthTextBox = new System.Windows.Forms.TextBox();
             this.MinExpenseResultLbl = new System.Windows.Forms.Label();
-            this.CovTypeComboBox = new System.Windows.Forms.ComboBox();
             this.ResultBtn = new System.Windows.Forms.Button();
+            this.ProjectNameTextBox = new System.Windows.Forms.TextBox();
+            this.CovTypesPanel = new System.Windows.Forms.Panel();
+            this.CovTypesInfoLbl = new System.Windows.Forms.Label();
+            this.LaminateCheckBox = new System.Windows.Forms.CheckBox();
+            this.CarpetCheckBox = new System.Windows.Forms.CheckBox();
+            this.ParquetBoardCheckBox = new System.Windows.Forms.CheckBox();
+            this.ParquetCheckBox = new System.Windows.Forms.CheckBox();
+            this.LinoleumCheckBox = new System.Windows.Forms.CheckBox();
+            this.CeramicTileCheckBox = new System.Windows.Forms.CheckBox();
+            this.InputPanel = new System.Windows.Forms.Panel();
+            this.AreaLbl = new System.Windows.Forms.Label();
+            this.OutputPanel = new System.Windows.Forms.Panel();
+            this.ResultLogLbl = new System.Windows.Forms.Label();
+            this.ResultLogPanel = new System.Windows.Forms.Panel();
+            this.ClearCheckBoxesBtn = new System.Windows.Forms.Button();
+            this.SaveBtn = new System.Windows.Forms.Button();
+            this.CatalogBtn = new System.Windows.Forms.Button();
+            this.CovTypesPanel.SuspendLayout();
+            this.ResultLogPanel.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // CoverageTypeLbl
-            // 
-            this.CoverageTypeLbl.AutoSize = true;
-            this.CoverageTypeLbl.Location = new System.Drawing.Point(50, 90);
-            this.CoverageTypeLbl.Name = "CoverageTypeLbl";
-            this.CoverageTypeLbl.Size = new System.Drawing.Size(81, 13);
-            this.CoverageTypeLbl.TabIndex = 0;
-            this.CoverageTypeLbl.Text = "Тип покрытия:";
-            // 
-            // CoverageLength
-            // 
-            this.CoverageLength.AutoSize = true;
-            this.CoverageLength.Location = new System.Drawing.Point(50, 127);
-            this.CoverageLength.Name = "CoverageLength";
-            this.CoverageLength.Size = new System.Drawing.Size(112, 13);
-            this.CoverageLength.TabIndex = 1;
-            this.CoverageLength.Text = "Длина покрытия (м.)";
-            // 
-            // CoverageWidthLbl
-            // 
-            this.CoverageWidthLbl.AutoSize = true;
-            this.CoverageWidthLbl.Location = new System.Drawing.Point(50, 172);
-            this.CoverageWidthLbl.Name = "CoverageWidthLbl";
-            this.CoverageWidthLbl.Size = new System.Drawing.Size(115, 13);
-            this.CoverageWidthLbl.TabIndex = 2;
-            this.CoverageWidthLbl.Text = "Ширина покрытия(м.)";
             // 
             // FloorLengthLbl
             // 
             this.FloorLengthLbl.AutoSize = true;
-            this.FloorLengthLbl.Location = new System.Drawing.Point(50, 216);
+            this.FloorLengthLbl.Location = new System.Drawing.Point(419, 18);
+            this.FloorLengthLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.FloorLengthLbl.Name = "FloorLengthLbl";
-            this.FloorLengthLbl.Size = new System.Drawing.Size(84, 13);
+            this.FloorLengthLbl.Size = new System.Drawing.Size(112, 17);
             this.FloorLengthLbl.TabIndex = 3;
-            this.FloorLengthLbl.Text = "Длина пола(м.)";
+            this.FloorLengthLbl.Text = "Floor length (m.)";
             // 
             // FloorWidthLbl
             // 
             this.FloorWidthLbl.AutoSize = true;
-            this.FloorWidthLbl.Location = new System.Drawing.Point(50, 259);
+            this.FloorWidthLbl.Location = new System.Drawing.Point(667, 18);
+            this.FloorWidthLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.FloorWidthLbl.Name = "FloorWidthLbl";
-            this.FloorWidthLbl.Size = new System.Drawing.Size(90, 13);
+            this.FloorWidthLbl.Size = new System.Drawing.Size(105, 17);
             this.FloorWidthLbl.TabIndex = 4;
-            this.FloorWidthLbl.Text = "Ширина пола(м.)";
-            // 
-            // MinExpenseLbl
-            // 
-            this.MinExpenseLbl.AutoSize = true;
-            this.MinExpenseLbl.Location = new System.Drawing.Point(50, 314);
-            this.MinExpenseLbl.Name = "MinExpenseLbl";
-            this.MinExpenseLbl.Size = new System.Drawing.Size(121, 13);
-            this.MinExpenseLbl.TabIndex = 5;
-            this.MinExpenseLbl.Text = "Минимальный расход:";
+            this.FloorWidthLbl.Text = "Floor width (m.)";
             // 
             // FloorWidthTextBox
             // 
-            this.FloorWidthTextBox.Location = new System.Drawing.Point(180, 259);
+            this.FloorWidthTextBox.Location = new System.Drawing.Point(795, 15);
+            this.FloorWidthTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.FloorWidthTextBox.Name = "FloorWidthTextBox";
-            this.FloorWidthTextBox.Size = new System.Drawing.Size(121, 20);
+            this.FloorWidthTextBox.Size = new System.Drawing.Size(99, 22);
             this.FloorWidthTextBox.TabIndex = 6;
-            // 
-            // CovLengthTxtBox
-            // 
-            this.CovLengthTxtBox.Location = new System.Drawing.Point(180, 124);
-            this.CovLengthTxtBox.Name = "CovLengthTxtBox";
-            this.CovLengthTxtBox.Size = new System.Drawing.Size(121, 20);
-            this.CovLengthTxtBox.TabIndex = 7;
-            // 
-            // CovWidthTextBox
-            // 
-            this.CovWidthTextBox.Location = new System.Drawing.Point(180, 169);
-            this.CovWidthTextBox.Name = "CovWidthTextBox";
-            this.CovWidthTextBox.Size = new System.Drawing.Size(121, 20);
-            this.CovWidthTextBox.TabIndex = 8;
+            this.FloorWidthTextBox.TextChanged += new System.EventHandler(this.FloorWidthTextBox_TextChanged);
             // 
             // FloorLengthTextBox
             // 
-            this.FloorLengthTextBox.Location = new System.Drawing.Point(180, 213);
+            this.FloorLengthTextBox.Location = new System.Drawing.Point(539, 15);
+            this.FloorLengthTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.FloorLengthTextBox.Name = "FloorLengthTextBox";
-            this.FloorLengthTextBox.Size = new System.Drawing.Size(121, 20);
+            this.FloorLengthTextBox.Size = new System.Drawing.Size(99, 22);
             this.FloorLengthTextBox.TabIndex = 9;
+            this.FloorLengthTextBox.TextChanged += new System.EventHandler(this.FloorLengthTextBox_TextChanged);
             // 
             // MinExpenseResultLbl
             // 
             this.MinExpenseResultLbl.AutoSize = true;
-            this.MinExpenseResultLbl.Location = new System.Drawing.Point(192, 314);
+            this.MinExpenseResultLbl.Location = new System.Drawing.Point(256, 386);
+            this.MinExpenseResultLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.MinExpenseResultLbl.Name = "MinExpenseResultLbl";
-            this.MinExpenseResultLbl.Size = new System.Drawing.Size(0, 13);
+            this.MinExpenseResultLbl.Size = new System.Drawing.Size(0, 17);
             this.MinExpenseResultLbl.TabIndex = 10;
-            // 
-            // CovTypeComboBox
-            // 
-            this.CovTypeComboBox.FormattingEnabled = true;
-            this.CovTypeComboBox.Items.AddRange(new object[] {
-            "Керамическая плитка",
-            "Линулеум",
-            "Паркет",
-            "Паркетная доска",
-            "Ковролин",
-            "Ламинат"});
-            this.CovTypeComboBox.Location = new System.Drawing.Point(180, 86);
-            this.CovTypeComboBox.Name = "CovTypeComboBox";
-            this.CovTypeComboBox.Size = new System.Drawing.Size(121, 21);
-            this.CovTypeComboBox.TabIndex = 11;
             // 
             // ResultBtn
             // 
-            this.ResultBtn.Location = new System.Drawing.Point(156, 370);
+            this.ResultBtn.Location = new System.Drawing.Point(1253, 329);
+            this.ResultBtn.Margin = new System.Windows.Forms.Padding(4);
             this.ResultBtn.Name = "ResultBtn";
-            this.ResultBtn.Size = new System.Drawing.Size(75, 23);
+            this.ResultBtn.Size = new System.Drawing.Size(100, 28);
             this.ResultBtn.TabIndex = 12;
-            this.ResultBtn.Text = "Посчитать";
+            this.ResultBtn.Text = "Get result";
             this.ResultBtn.UseVisualStyleBackColor = true;
             this.ResultBtn.Click += new System.EventHandler(this.ResultBtn_Click);
             // 
+            // ProjectNameTextBox
+            // 
+            this.ProjectNameTextBox.Location = new System.Drawing.Point(16, 15);
+            this.ProjectNameTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.ProjectNameTextBox.Name = "ProjectNameTextBox";
+            this.ProjectNameTextBox.Size = new System.Drawing.Size(309, 22);
+            this.ProjectNameTextBox.TabIndex = 13;
+            // 
+            // CovTypesPanel
+            // 
+            this.CovTypesPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CovTypesPanel.Controls.Add(this.CovTypesInfoLbl);
+            this.CovTypesPanel.Controls.Add(this.LaminateCheckBox);
+            this.CovTypesPanel.Controls.Add(this.CarpetCheckBox);
+            this.CovTypesPanel.Controls.Add(this.ParquetBoardCheckBox);
+            this.CovTypesPanel.Controls.Add(this.ParquetCheckBox);
+            this.CovTypesPanel.Controls.Add(this.LinoleumCheckBox);
+            this.CovTypesPanel.Controls.Add(this.CeramicTileCheckBox);
+            this.CovTypesPanel.Location = new System.Drawing.Point(16, 73);
+            this.CovTypesPanel.Margin = new System.Windows.Forms.Padding(4);
+            this.CovTypesPanel.Name = "CovTypesPanel";
+            this.CovTypesPanel.Size = new System.Drawing.Size(153, 221);
+            this.CovTypesPanel.TabIndex = 14;
+            // 
+            // CovTypesInfoLbl
+            // 
+            this.CovTypesInfoLbl.AutoSize = true;
+            this.CovTypesInfoLbl.Dock = System.Windows.Forms.DockStyle.Top;
+            this.CovTypesInfoLbl.Location = new System.Drawing.Point(0, 0);
+            this.CovTypesInfoLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.CovTypesInfoLbl.Name = "CovTypesInfoLbl";
+            this.CovTypesInfoLbl.Size = new System.Drawing.Size(111, 17);
+            this.CovTypesInfoLbl.TabIndex = 6;
+            this.CovTypesInfoLbl.Text = "Covering Types:";
+            // 
+            // LaminateCheckBox
+            // 
+            this.LaminateCheckBox.AutoSize = true;
+            this.LaminateCheckBox.Location = new System.Drawing.Point(4, 172);
+            this.LaminateCheckBox.Margin = new System.Windows.Forms.Padding(4);
+            this.LaminateCheckBox.Name = "LaminateCheckBox";
+            this.LaminateCheckBox.Size = new System.Drawing.Size(88, 21);
+            this.LaminateCheckBox.TabIndex = 5;
+            this.LaminateCheckBox.Text = "Laminate";
+            this.LaminateCheckBox.UseVisualStyleBackColor = true;
+            this.LaminateCheckBox.CheckedChanged += new System.EventHandler(this.LaminateCheckBox_CheckedChanged);
+            // 
+            // CarpetCheckBox
+            // 
+            this.CarpetCheckBox.AutoSize = true;
+            this.CarpetCheckBox.Location = new System.Drawing.Point(4, 144);
+            this.CarpetCheckBox.Margin = new System.Windows.Forms.Padding(4);
+            this.CarpetCheckBox.Name = "CarpetCheckBox";
+            this.CarpetCheckBox.Size = new System.Drawing.Size(72, 21);
+            this.CarpetCheckBox.TabIndex = 4;
+            this.CarpetCheckBox.Text = "Carpet";
+            this.CarpetCheckBox.UseVisualStyleBackColor = true;
+            this.CarpetCheckBox.CheckedChanged += new System.EventHandler(this.CarpetCheckBox_CheckedChanged);
+            // 
+            // ParquetBoardCheckBox
+            // 
+            this.ParquetBoardCheckBox.AutoSize = true;
+            this.ParquetBoardCheckBox.Location = new System.Drawing.Point(4, 116);
+            this.ParquetBoardCheckBox.Margin = new System.Windows.Forms.Padding(4);
+            this.ParquetBoardCheckBox.Name = "ParquetBoardCheckBox";
+            this.ParquetBoardCheckBox.Size = new System.Drawing.Size(122, 21);
+            this.ParquetBoardCheckBox.TabIndex = 3;
+            this.ParquetBoardCheckBox.Text = "Parquet Board";
+            this.ParquetBoardCheckBox.UseVisualStyleBackColor = true;
+            this.ParquetBoardCheckBox.CheckedChanged += new System.EventHandler(this.ParquetBoardCheckBox_CheckedChanged);
+            // 
+            // ParquetCheckBox
+            // 
+            this.ParquetCheckBox.AutoSize = true;
+            this.ParquetCheckBox.Location = new System.Drawing.Point(4, 87);
+            this.ParquetCheckBox.Margin = new System.Windows.Forms.Padding(4);
+            this.ParquetCheckBox.Name = "ParquetCheckBox";
+            this.ParquetCheckBox.Size = new System.Drawing.Size(80, 21);
+            this.ParquetCheckBox.TabIndex = 2;
+            this.ParquetCheckBox.Text = "Parquet";
+            this.ParquetCheckBox.UseVisualStyleBackColor = true;
+            this.ParquetCheckBox.CheckedChanged += new System.EventHandler(this.ParquetCheckBox_CheckedChanged);
+            // 
+            // LinoleumCheckBox
+            // 
+            this.LinoleumCheckBox.AutoSize = true;
+            this.LinoleumCheckBox.Location = new System.Drawing.Point(4, 59);
+            this.LinoleumCheckBox.Margin = new System.Windows.Forms.Padding(4);
+            this.LinoleumCheckBox.Name = "LinoleumCheckBox";
+            this.LinoleumCheckBox.Size = new System.Drawing.Size(87, 21);
+            this.LinoleumCheckBox.TabIndex = 1;
+            this.LinoleumCheckBox.Text = "Linoleum";
+            this.LinoleumCheckBox.UseVisualStyleBackColor = true;
+            this.LinoleumCheckBox.CheckedChanged += new System.EventHandler(this.LinoleumCheckBox_CheckedChanged);
+            // 
+            // CeramicTileCheckBox
+            // 
+            this.CeramicTileCheckBox.AutoSize = true;
+            this.CeramicTileCheckBox.Location = new System.Drawing.Point(4, 31);
+            this.CeramicTileCheckBox.Margin = new System.Windows.Forms.Padding(4);
+            this.CeramicTileCheckBox.Name = "CeramicTileCheckBox";
+            this.CeramicTileCheckBox.Size = new System.Drawing.Size(108, 21);
+            this.CeramicTileCheckBox.TabIndex = 0;
+            this.CeramicTileCheckBox.Text = "Ceramic Tile";
+            this.CeramicTileCheckBox.UseVisualStyleBackColor = true;
+            this.CeramicTileCheckBox.CheckedChanged += new System.EventHandler(this.CeramicTileCheckBox_CheckedChanged);
+            // 
+            // InputPanel
+            // 
+            this.InputPanel.AutoSize = true;
+            this.InputPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.InputPanel.Location = new System.Drawing.Point(177, 73);
+            this.InputPanel.Margin = new System.Windows.Forms.Padding(4);
+            this.InputPanel.Name = "InputPanel";
+            this.InputPanel.Size = new System.Drawing.Size(386, 92);
+            this.InputPanel.TabIndex = 15;
+            // 
+            // AreaLbl
+            // 
+            this.AreaLbl.AutoSize = true;
+            this.AreaLbl.Location = new System.Drawing.Point(963, 18);
+            this.AreaLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.AreaLbl.Name = "AreaLbl";
+            this.AreaLbl.Size = new System.Drawing.Size(81, 17);
+            this.AreaLbl.TabIndex = 16;
+            this.AreaLbl.Text = "Floor area: ";
+            // 
+            // OutputPanel
+            // 
+            this.OutputPanel.AutoSize = true;
+            this.OutputPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.OutputPanel.Location = new System.Drawing.Point(572, 73);
+            this.OutputPanel.Margin = new System.Windows.Forms.Padding(4);
+            this.OutputPanel.Name = "OutputPanel";
+            this.OutputPanel.Size = new System.Drawing.Size(386, 92);
+            this.OutputPanel.TabIndex = 16;
+            // 
+            // ResultLogLbl
+            // 
+            this.ResultLogLbl.AutoSize = true;
+            this.ResultLogLbl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ResultLogLbl.Location = new System.Drawing.Point(0, 0);
+            this.ResultLogLbl.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.ResultLogLbl.Name = "ResultLogLbl";
+            this.ResultLogLbl.Size = new System.Drawing.Size(0, 17);
+            this.ResultLogLbl.TabIndex = 17;
+            // 
+            // ResultLogPanel
+            // 
+            this.ResultLogPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ResultLogPanel.Controls.Add(this.ResultLogLbl);
+            this.ResultLogPanel.Location = new System.Drawing.Point(967, 73);
+            this.ResultLogPanel.Margin = new System.Windows.Forms.Padding(4);
+            this.ResultLogPanel.Name = "ResultLogPanel";
+            this.ResultLogPanel.Size = new System.Drawing.Size(386, 153);
+            this.ResultLogPanel.TabIndex = 18;
+            // 
+            // ClearCheckBoxesBtn
+            // 
+            this.ClearCheckBoxesBtn.Location = new System.Drawing.Point(16, 374);
+            this.ClearCheckBoxesBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.ClearCheckBoxesBtn.Name = "ClearCheckBoxesBtn";
+            this.ClearCheckBoxesBtn.Size = new System.Drawing.Size(100, 28);
+            this.ClearCheckBoxesBtn.TabIndex = 19;
+            this.ClearCheckBoxesBtn.Text = "Clear";
+            this.ClearCheckBoxesBtn.UseVisualStyleBackColor = true;
+            this.ClearCheckBoxesBtn.Click += new System.EventHandler(this.ClearCheckBoxesBtn_Click);
+            // 
+            // SaveBtn
+            // 
+            this.SaveBtn.Location = new System.Drawing.Point(967, 329);
+            this.SaveBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.SaveBtn.Name = "SaveBtn";
+            this.SaveBtn.Size = new System.Drawing.Size(100, 28);
+            this.SaveBtn.TabIndex = 20;
+            this.SaveBtn.Text = "Save to file";
+            this.SaveBtn.UseVisualStyleBackColor = true;
+            this.SaveBtn.Click += new System.EventHandler(this.SaveBtn_Click);
+            // 
+            // CatalogBtn
+            // 
+            this.CatalogBtn.Location = new System.Drawing.Point(1110, 329);
+            this.CatalogBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.CatalogBtn.Name = "CatalogBtn";
+            this.CatalogBtn.Size = new System.Drawing.Size(100, 28);
+            this.CatalogBtn.TabIndex = 21;
+            this.CatalogBtn.Text = "Catalog";
+            this.CatalogBtn.UseVisualStyleBackColor = true;
+            this.CatalogBtn.Click += new System.EventHandler(this.CatalogBtn_Click);
+            // 
             // CalculatorForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(353, 435);
+            this.ClientSize = new System.Drawing.Size(1372, 639);
+            this.Controls.Add(this.CatalogBtn);
+            this.Controls.Add(this.SaveBtn);
+            this.Controls.Add(this.ClearCheckBoxesBtn);
+            this.Controls.Add(this.ResultLogPanel);
+            this.Controls.Add(this.OutputPanel);
+            this.Controls.Add(this.AreaLbl);
+            this.Controls.Add(this.InputPanel);
+            this.Controls.Add(this.CovTypesPanel);
+            this.Controls.Add(this.ProjectNameTextBox);
             this.Controls.Add(this.ResultBtn);
-            this.Controls.Add(this.CovTypeComboBox);
             this.Controls.Add(this.MinExpenseResultLbl);
             this.Controls.Add(this.FloorLengthTextBox);
-            this.Controls.Add(this.CovWidthTextBox);
-            this.Controls.Add(this.CovLengthTxtBox);
             this.Controls.Add(this.FloorWidthTextBox);
-            this.Controls.Add(this.MinExpenseLbl);
             this.Controls.Add(this.FloorWidthLbl);
             this.Controls.Add(this.FloorLengthLbl);
-            this.Controls.Add(this.CoverageWidthLbl);
-            this.Controls.Add(this.CoverageLength);
-            this.Controls.Add(this.CoverageTypeLbl);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "CalculatorForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CalculatorForm";
+            this.CovTypesPanel.ResumeLayout(false);
+            this.CovTypesPanel.PerformLayout();
+            this.ResultLogPanel.ResumeLayout(false);
+            this.ResultLogPanel.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label CoverageTypeLbl;
-        private System.Windows.Forms.Label CoverageLength;
-        private System.Windows.Forms.Label CoverageWidthLbl;
         private System.Windows.Forms.Label FloorLengthLbl;
         private System.Windows.Forms.Label FloorWidthLbl;
-        private System.Windows.Forms.Label MinExpenseLbl;
         private System.Windows.Forms.TextBox FloorWidthTextBox;
-        private System.Windows.Forms.TextBox CovLengthTxtBox;
-        private System.Windows.Forms.TextBox CovWidthTextBox;
         private System.Windows.Forms.TextBox FloorLengthTextBox;
         private System.Windows.Forms.Label MinExpenseResultLbl;
-        private System.Windows.Forms.ComboBox CovTypeComboBox;
         private System.Windows.Forms.Button ResultBtn;
+        private System.Windows.Forms.TextBox ProjectNameTextBox;
+        private System.Windows.Forms.Panel CovTypesPanel;
+        private System.Windows.Forms.CheckBox LaminateCheckBox;
+        private System.Windows.Forms.CheckBox CarpetCheckBox;
+        private System.Windows.Forms.CheckBox ParquetBoardCheckBox;
+        private System.Windows.Forms.CheckBox ParquetCheckBox;
+        private System.Windows.Forms.CheckBox LinoleumCheckBox;
+        private System.Windows.Forms.CheckBox CeramicTileCheckBox;
+        private System.Windows.Forms.Panel InputPanel;
+        private System.Windows.Forms.Label AreaLbl;
+        private System.Windows.Forms.Label CovTypesInfoLbl;
+        private System.Windows.Forms.Panel OutputPanel;
+        private System.Windows.Forms.Label ResultLogLbl;
+        private System.Windows.Forms.Panel ResultLogPanel;
+        private System.Windows.Forms.Button ClearCheckBoxesBtn;
+        private System.Windows.Forms.Button SaveBtn;
+        private System.Windows.Forms.Button CatalogBtn;
     }
 }
 
