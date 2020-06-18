@@ -10,8 +10,8 @@ namespace Calculator.Wfa
 {
     public partial class CalculatorForm : Form
     {
-        private readonly List<InputPanel> _inputPanel = new List<InputPanel>();
-        private readonly List<OutputPanel> _outputPanels = new List<OutputPanel>();
+        private  List<InputPanel> _inputPanel = new List<InputPanel>();
+        private List<OutputPanel> _outputPanels = new List<OutputPanel>();
         private AppDbContext _appContext = new AppDbContext();
         public int InputLevel { get { return _inputPanel.Count; } }
         public int OutputLevel { get { return _outputPanels.Count; } }
@@ -174,10 +174,16 @@ namespace Calculator.Wfa
             LinoleumCheckBox.Checked = false;
             ParquetBoardCheckBox.Checked = false;
             ParquetCheckBox.Checked = false;
+            OutputPanel.Controls.Clear();
+            _outputPanels.Clear();
+            InputPanel.Controls.Clear();
+            _inputPanel.Clear();
+            ResultLogLbl.Text = string.Empty;
         }
 
         private void SaveBtn_Click(object sender, EventArgs e)
         {
+            saveFileDialog1.ShowDialog();
             using (var stream = new StreamWriter(@"D:/results.doc"))
             {
 
@@ -189,7 +195,7 @@ namespace Calculator.Wfa
                     var resultValue = GetResultValue(inputPanel);
                     stream.WriteLine($"Coverage type: {inputPanel.InputNameLbl.Text}\r\n\tWith minimal consuption: {resultValue}");
                 }
-                MessageBox.Show(@"Saved at D:/results.txt", "Notification windows");
+                MessageBox.Show(@"Saved at D:/results.doc", "Notification windows");
             }
         }
 
@@ -197,5 +203,7 @@ namespace Calculator.Wfa
         {
             //DbInitializer.Seed(_appContext);
         }
+
+ 
     }
 }
