@@ -307,6 +307,7 @@
             this.Name = "CalculatorForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CalculatorForm";
+            this.Load += new System.EventHandler(this.CalculatorForm_Load);
             this.CovTypesPanel.ResumeLayout(false);
             this.CovTypesPanel.PerformLayout();
             this.ResultLogPanel.ResumeLayout(false);

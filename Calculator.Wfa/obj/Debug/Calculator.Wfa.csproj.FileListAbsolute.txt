@@ -159,3 +159,5 @@ C:\Users\limfo\Source\Repos\Calculation-of-flooring\Calculator.Wfa\obj\Debug\Cal
 C:\Users\limfo\Source\Repos\Calculation-of-flooring\Calculator.Wfa\obj\Debug\Calculator.Wfa.csproj.CopyComplete
 C:\Users\limfo\Source\Repos\Calculation-of-flooring\Calculator.Wfa\obj\Debug\Calculator.Wfa.exe
 C:\Users\limfo\Source\Repos\Calculation-of-flooring\Calculator.Wfa\obj\Debug\Calculator.Wfa.pdb
+C:\Users\limfo\Source\Repos\Calculation-of-flooring\Calculator.Wfa\obj\Debug\Calculator.Wfa.LoginForm.resources
+C:\Users\limfo\Source\Repos\Calculation-of-flooring\Calculator.Wfa\obj\Debug\Calculator.Wfa.DataBase.resources

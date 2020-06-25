@@ -144,6 +144,12 @@
       <DependentUpon>CalculatorForm.cs</DependentUpon>
     </Compile>
     <Compile Include="CoveringType.cs" />
+    <Compile Include="DataBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataBase.Designer.cs">
+      <DependentUpon>DataBase.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataLayer\AppDbContext.cs" />
     <Compile Include="DataLayer\CoverageType.cs" />
     <Compile Include="DataLayer\DbInitializer.cs" />
@@ -156,6 +162,12 @@
     <Compile Include="InputPanel.Designer.cs">
       <DependentUpon>InputPanel.cs</DependentUpon>
     </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="OutputPanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -167,8 +179,14 @@
     <EmbeddedResource Include="CalculatorForm.resx">
       <DependentUpon>CalculatorForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DataBase.resx">
+      <DependentUpon>DataBase.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="InputPanel.resx">
       <DependentUpon>InputPanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="OutputPanel.resx">
       <DependentUpon>OutputPanel.cs</DependentUpon>

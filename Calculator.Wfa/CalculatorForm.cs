@@ -201,9 +201,14 @@ namespace Calculator.Wfa
 
         private void CatalogBtn_Click(object sender, EventArgs e)
         {
+            DataBase dataBase= new DataBase();
+            dataBase.Show();
             //DbInitializer.Seed(_appContext);
         }
 
- 
+        private void CalculatorForm_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
