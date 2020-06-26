@@ -150,12 +150,6 @@
     <Compile Include="DataBase.Designer.cs">
       <DependentUpon>DataBase.cs</DependentUpon>
     </Compile>
-    <Compile Include="DataLayer\AppDbContext.cs" />
-    <Compile Include="DataLayer\CoverageType.cs" />
-    <Compile Include="DataLayer\DbInitializer.cs" />
-    <Compile Include="DataLayer\Manufacturer.cs" />
-    <Compile Include="DataLayer\Order.cs" />
-    <Compile Include="DataLayer\Product.cs" />
     <Compile Include="InputPanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
